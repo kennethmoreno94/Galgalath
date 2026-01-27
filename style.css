@@ -1,0 +1,64 @@
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #f9f6f1;
+}
+
+
+header {
+background: #7a4a2e;
+color: white;
+padding: 1.5rem;
+text-align: center;
+}
+
+
+nav a {
+color: white;
+margin: 0 0.6rem;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+.hero {
+padding: 3rem 1rem;
+background: #e7d3b1;
+text-align: center;
+}
+
+
+.section {
+padding: 3rem 1.5rem;
+max-width: 1100px;
+margin: auto;
+}
+
+
+.section.alt {
+background: #efe5d5;
+}
+
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 1.5rem;
+}
+
+
+.card {
+background: white;
+padding: 2rem;
+text-align: center;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+
+footer {
+background: #7a4a2e;
+color: white;
+text-align: center;
+padding: 1.2rem;
+}
