@@ -1,88 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Galgalath</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Galgalath</title>
+  <meta name="description" content="Galgalath · Artesanías en miniatura. Incensarios y piezas únicas para aldeas y dioramas en perspectiva." />
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/png" href="assets/logo-galgalath.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
-
-<header>
-  <h1>Galgalath</h1>
-
-  <nav>
-    <ul class="menu">
-      <li><a href="#home">Home</a></li>
-
-      <li>
-        <a href="#">Gallery</a>
-        <ul>
-          <li><a href="./gallery/accesories.html">Accesories</a></li>
-          <li><a href="./gallery/crafts.html">Crafts</a></li>
-          <li><a href="./gallery/diorama.html">Diorama</a></li>
-        </ul>
-      </li>
-
-      <li><a href="#workshop">Workshop</a></li>
-      <li><a href="#boutique">Boutique</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#company">Company</a></li>
-    </ul>
+<header class="header">
+  <div class="logo">Galgalath</div>
+  <nav class="nav">
+    <a href="#gallery">Gallery</a>
+    <a href="#process">Process</a>
+    <a href="#boutique">Boutique</a>
+    <a href="#support">Support</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
-
-<section id="home" class="hero">
-<h2>Welcome</h2>
-<p>Access center to our crafts, workshop and boutique.</p>
-</section>
-
-<section id="gallery-section" class="section">
-  <h2>Gallery</h2>
-
-  <div class="gallery-links">
-    <a href="gallery/accesories.html">Accesories</a>
-    <a href="gallery/crafts.html">Crafts</a>
-    <a href="gallery/diorama.html">Diorama</a>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Miniature architecture<br>crafted in silence</h1>
+    <a href="#gallery" class="btn-primary">Enter Gallery</a>
   </div>
 </section>
 
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>Gallery</h2>
 
+  <div class="gallery-grid">
 
-<section id="workshop" class="section alt">
-<h2>Workshop</h2>
-<p>Discover our creative process and artisan workshops.</p>
+    <!-- PRODUCT -->
+    <div class="gallery-item">
+      <img src="assets/casabelen5x5.jpg" alt="Casa Belén 5x5">
+      <h3>CasaBelén 5x5</h3>
+      <a href="#casabelen5x5" class="btn-secondary">View Piece</a>
+    </div>
+
+    <!-- ALDEAS -->
+    <div class="gallery-item">
+      <img src="assets/aldeas.jpg" alt="Aldeas en perspectiva">
+      <h3>Aldeas</h3>
+      <a href="#aldeas" class="btn-secondary">View Collection</a>
+    </div>
+
+  </div>
 </section>
 
+<!-- PRODUCT DETAIL -->
+<section id="casabelen5x5" class="section dark">
+  <h2>CasaBelén 5x5</h2>
 
-<section id="boutique" class="section">
-<h2>Boutique</h2>
-<p>Access our online store and points of sale.</p>
+  <div class="media-block">
+    <img src="assets/casabelen5x5-detail.jpg" alt="Casa Belén detalle">
+  </div>
+
+  <div class="actions">
+    <a href="#process-casabelen5x5" class="btn-primary">View Process</a>
+    <a href="#boutique" class="btn-secondary">Go to Boutique</a>
+  </div>
 </section>
 
+<!-- PROCESS -->
+<section id="process" class="section">
+  <h2>The Process</h2>
 
-<section id="contact" class="section alt">
-<h2>Contact</h2>
-<p>Email: galgalathtv@gmail.com</p>
-<p>WhatsApp: +502 3425 0375</p>
+  <div id="process-casabelen5x5" class="process-block">
+    <h3>CasaBelén 5x5</h3>
+
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/TU_VIDEO_ID" 
+        title="CasaBelén 5x5 Process"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="process-gallery">
+      <img src="assets/process1.jpg" alt="">
+      <img src="assets/process2.jpg" alt="">
+      <img src="assets/process3.jpg" alt="">
+    </div>
+  </div>
 </section>
 
+<!-- BOUTIQUE -->
+<section id="boutique" class="section dark">
+  <h2>Boutique</h2>
 
-<section id="company" class="section">
-<h2>About the company</h2>
-<p>We are a company dedicated to the creation of authentic handicrafts.</p>
+  <div class="links">
+    <a href="#" target="_blank">Shopify</a>
+    <a href="#" target="_blank">Mercado Libre</a>
+  </div>
 </section>
 
+<!-- SUPPORT -->
+<section id="support" class="section">
+  <h2>Support the Project</h2>
 
-<footer>
-  <p>© 2026 Galgalath</p>
+  <div class="links">
+    <a href="https://www.buymeacoffee.com/galgalath" target="_blank">Buy Me a Coffee</a>
+    <a href="https://www.patreon.com/galgalath" target="_blank">Patreon</a>
+    <a href="https://ko-fi.com/galgalath" target="_blank">Ko-fi</a>
+    <a href="https://paypal.me/galgalath" target="_blank">PayPal</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+  <h2>Contact</h2>
+
+  <div class="links">
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+    <a href="#">Pinterest</a>
+    <a href="#">TikTok</a>
+    <a href="#">Tumblr</a>
+    <a href="#">Facebook</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© Galgalath · Handcrafted Miniatures</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-
 
 
 
