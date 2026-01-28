@@ -6,11 +6,18 @@ background: #f9f6f1;
 
 
 header {
-background: #7a4a2e;
-color: white;
-padding: 1.5rem;
-text-align: center;
+  background-image: url('mis-imagenes/aldea.png'); /* ruta de tu imagen */
+  background-size: cover;       /* cubre todo el espacio */
+  background-position: center;  /* centra la imagen */
+  height: 400px;                /* ajusta la altura según tu gusto */
+  display: flex;                /* para centrar el texto */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;                 /* color del texto encima de la imagen */
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* sombra para que el texto destaque */
 }
+
 
 
 nav a {
@@ -61,4 +68,5 @@ background: #7a4a2e;
 color: white;
 text-align: center;
 padding: 1.2rem;
+
 }
