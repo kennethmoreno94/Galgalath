@@ -1,55 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Artesanías</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galgalath</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <header class="header">
+    <nav class="nav">
+      <h1 class="logo">GALGALATH</h1>
+      <ul class="menu">
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#taller">Taller</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-<h1>Artesanías</h1>
-<nav>
+  <main>
+    <!-- GALERÍA -->
+    <section id="galeria" class="section">
+      <h2>Galería</h2>
+      <p class="section-desc">Piezas únicas de lujo artesanal</p>
 
-<a href="#galeria">Galería</a>
-<a href="#taller">Taller</a>
-<a href="#contacto">Contacto</a>
+      <!-- Aquí puedes agregar imágenes directamente -->
+      <div class="gallery">
+        <!-- EJEMPLO -->
+        <!-- <img src="images/foto1.jpg" alt="Obra Galgalath"> -->
+      </div>
+    </section>
 
-</nav>
-</header>
+    <!-- TALLER -->
+    <section id="taller" class="section dark">
+      <h2>Taller</h2>
+      <p class="section-desc">Proceso, detalle y perfección</p>
 
+      <!-- Video de YouTube incrustado -->
+      <div class="video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/VIDEO_ID" 
+          title="Video del Taller"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
 
+  <footer class="footer">
+    <p>© 2026 Galgalath · Artesanía de Alto Lujo</p>
+  </footer>
 
-
-<section id="galeria" class="section">
-<h2>Galería</h2>
-<div class="grid">
-<div class="card">Artesanía 1</div>
-
-
-</div>
-</section>
-
-
-<section id="taller" class="section alt">
-<h2>Taller</h2>
-<p>Conoce nuestro proceso creativo y talleres artesanales.</p>
-</section>
-
-
-
-<section id="contacto" class="section alt">
-<h2>Contacto</h2>
-<p>Email: contacto@ejemplo.com</p>
-<p>WhatsApp: +502 0000 0000</p>
-</section>
-
-
-
-
-<footer>
-<p>© 2026 Artesanías</p>
+  <script src="script.js"></script>
+</body>
 </html>
-
