@@ -261,6 +261,18 @@ footer {
   color: white;
 }
 
+/* ===== LIGHTBOX ZOOM ===== */
+
+.lightbox-img {
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+  transform-origin: center center;
+}
+
+.lightbox-img.zoomed {
+  cursor: grab;
+}
+
 
 
 
