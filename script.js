@@ -38,6 +38,46 @@ const revealOnScroll = () => {
     }
   });
 };
+// ===== LIGHTBOX SHOWROOM =====
+const images = document.querySelectorAll('.gallery-item img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const closeBtn = document.querySelector('.close');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+let currentIndex = 0;
+
+images.forEach((img, index) => {
+  img.addEventListener('click', () => {
+    currentIndex = index;
+    showLightbox();
+  });
+});
+
+function showLightbox() {
+  lightbox.style.display = 'flex';
+  lightboxImg.src = images[currentIndex].src;
+}
+
+closeBtn.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % images.length;
+  showLightbox();
+});
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showLightbox();
+});
+
+// Cerrar con ESC
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') lightbox.style.display = 'none';
+});
 
 window.addEventListener('scroll', revealOnScroll);
 revealOnScroll();
