@@ -60,3 +60,62 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 });
+// ===== LIGHTBOX ZOOM =====
+let scale = 1;
+let isDragging = false;
+let startX = 0;
+let startY = 0;
+let translateX = 0;
+let translateY = 0;
+
+lightboxImg.addEventListener("wheel", e => {
+  e.preventDefault();
+
+  const zoomSpeed = 0.15;
+  scale += e.deltaY < 0 ? zoomSpeed : -zoomSpeed;
+  scale = Math.min(Math.max(1, scale), 4);
+
+  applyTransform();
+});
+
+lightboxImg.addEventListener("click", () => {
+  scale = scale === 1 ? 2 : 1;
+  translateX = 0;
+  translateY = 0;
+  applyTransform();
+});
+
+lightboxImg.addEventListener("mousedown", e => {
+  if (scale === 1) return;
+
+  isDragging = true;
+  startX = e.clientX - translateX;
+  startY = e.clientY - translateY;
+  lightboxImg.classList.add("zoomed");
+});
+
+document.addEventListener("mousemove", e => {
+  if (!isDragging) return;
+
+  translateX = e.clientX - startX;
+  translateY = e.clientY - startY;
+  applyTransform();
+});
+
+document.addEventListener("mouseup", () => {
+  isDragging = false;
+  lightboxImg.classList.remove("zoomed");
+});
+
+function applyTransform() {
+  lightboxImg.style.transform =
+    `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+}
+
+// Reset al cambiar imagen o cerrar
+function resetZoom() {
+  scale = 1;
+  translateX = 0;
+  translateY = 0;
+  applyTransform();
+}
