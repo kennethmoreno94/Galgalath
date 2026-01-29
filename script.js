@@ -1,1 +1,1 @@
-// Reserved for future subtle animations
+console.log("Web de artesanías lista");
