@@ -63,8 +63,9 @@ text-align: center;
 padding: 1.2rem;
 }
 header {
-  background-image: url('images/portada.jpg');
+  background-image: url('images/aldea.png');
   background-size: cover;
   background-position: center;
 }
+
 
