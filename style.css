@@ -285,3 +285,19 @@ footer {
     margin-top: 120px !important;
   }
 }
+.workshop-text {
+  margin: 60px auto;
+  max-width: 700px;
+  text-align: center;
+  font-size: 1.05rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* más aire en móvil */
+@media (max-width: 768px) {
+  .workshop-text {
+    margin: 80px auto;
+  }
+}
+
