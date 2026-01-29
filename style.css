@@ -12,12 +12,14 @@ body {
 
 .menu {
   background-image: url("images/menu-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 60px 20px;
+  background-size: cover;      /* cubre todo el menú */
+  background-position: center; /* centra la imagen */
+  background-repeat: no-repeat;
+  padding: 80px 20px;
   text-align: center;
   border-bottom: 3px solid #bfa76a;
 }
+
 
 .menu h1 {
   font-size: 3rem;
@@ -119,3 +121,4 @@ footer {
   background: #000;
   border-top: 2px solid #bfa76a;
 }
+
