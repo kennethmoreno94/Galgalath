@@ -269,3 +269,19 @@ footer {
   background: #25D366;
   color: #fff;
 }
+
+/* ============================= */
+/*  FIX REAL DEFINITIVO WORKSHOP */
+/* ============================= */
+
+/* fuerza separación DESDE el grid */
+#workshop .grid {
+  margin-top: 80px;
+}
+
+/* en móvil más aire */
+@media (max-width: 768px) {
+  #workshop .grid {
+    margin-top: 120px !important;
+  }
+}
