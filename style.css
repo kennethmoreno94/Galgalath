@@ -11,7 +11,7 @@ body {
 }
 
 .menu {
-  background-image: url("images/menu-bg.jpg");
+  background-image: url("images/aldea.png");
   background-size: cover;      /* cubre todo el menú */
   background-position: center; /* centra la imagen */
   background-repeat: no-repeat;
@@ -121,4 +121,5 @@ footer {
   background: #000;
   border-top: 2px solid #bfa76a;
 }
+
 
