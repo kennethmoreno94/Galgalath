@@ -21,12 +21,6 @@ body {
 }
 
 
-.menu h1 {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  color: #bfa76a;
-}
-
 nav {
   margin-top: 20px;
 }
@@ -121,5 +115,6 @@ footer {
   background: #000;
   border-top: 2px solid #bfa76a;
 }
+
 
 
