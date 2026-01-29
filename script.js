@@ -1,17 +1,12 @@
-// Galgalath JS
-// Este archivo está listo para futuras animaciones o interacciones
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll("nav a");
 
-// Ejemplo: animación suave al hacer clic en el menú
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    document.querySelector(link.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+  links.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      document
+        .querySelector(link.getAttribute("href"))
+        .scrollIntoView({ behavior: "smooth" });
     });
   });
 });
-
-// En el futuro aquí puedes:
-// - Cargar imágenes dinámicamente
-// - Animaciones premium
-// - Interacciones tipo showroom
