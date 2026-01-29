@@ -28,12 +28,17 @@ body {
 }
 /* ===== FERRARI LAUNCH EFFECT ===== */
 
-.gallery-item,
-.video-container {
+.gallery-item {
   opacity: 0;
   transform: translateY(60px) scale(0.96);
   transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+.gallery-item.reveal {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
 
 .gallery-item.reveal,
 .video-container.reveal {
@@ -354,6 +359,7 @@ footer {
   color: var(--gold);
   font-size: 1.1rem;
 }
+
 
 
 
