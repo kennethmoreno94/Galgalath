@@ -1,99 +1,85 @@
-:root {
-  --light: #f4f1ec;
-  --dark: #121212;
-  --accent: #c2a36a;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: Inter, sans-serif;
-  background: var(--light);
-  color: #1a1a1a;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 20px 60px;
+  background: #111;
+  color: white;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  background: rgba(244,241,236,0.95);
-}
-
-.brand {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
+  align-items: center;
 }
 
 nav a {
-  margin-left: 24px;
+  color: white;
+  margin-left: 20px;
   text-decoration: none;
-  color: inherit;
-  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 .hero {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  background: linear-gradient(180deg, #111, #222);
-  color: #eee;
-}
-
-.hero h1 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 48px;
-  margin-bottom: 40px;
-}
-
-.cta {
-  padding: 14px 32px;
-  border: 1px solid var(--accent);
-  color: var(--accent);
-  text-decoration: none;
+  padding: 60px 20px;
+  background: #ddd;
 }
 
 .section {
-  padding: 140px 10%;
+  padding: 40px 20px;
+  text-align: center;
 }
 
-.section.dark {
-  background: var(--dark);
-  color: #eaeaea;
+.section.alt {
+  background: #eee;
 }
 
-h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.grid {
+.grid-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
 }
 
-.card {
-  padding: 40px;
-  border: 1px solid #ccc;
+.grid-galeria img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.card.muted {
-  opacity: 0.6;
+.video iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 10px;
+}
+
+.social {
+  list-style: none;
+  padding: 0;
+}
+
+.social li {
+  margin: 10px 0;
+}
+
+.social a {
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social a:hover {
+  text-decoration: underline;
 }
 
 footer {
+  background: #111;
+  color: white;
   text-align: center;
-  padding: 40px;
-  font-size: 13px;
+  padding: 15px;
 }
