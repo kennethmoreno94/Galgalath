@@ -367,6 +367,53 @@ footer {
   }
 }
 
+/* ============================= */
+/*  FIX DEFINITIVO SECCIÓN TALLER */
+/* ============================= */
+
+#workshop {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Protege el video */
+#workshop .video-container {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 70px; /* separación REAL */
+}
+
+/* Evita que la grid suba */
+#workshop .grid {
+  position: relative;
+  z-index: 1;
+}
+
+/* Neutraliza efectos que rompen el layout */
+#workshop .card,
+#workshop .gallery-item {
+  transform: none;
+}
+
+/* Mantiene animación elegante SIN subir */
+#workshop .card:hover {
+  transform: scale(1.03);
+}
+
+/* Asegura iframe estable */
+#workshop iframe {
+  display: block;
+  z-index: 2;
+}
+
+/* Extra espacio en móvil */
+@media (max-width: 768px) {
+  #workshop .video-container {
+    margin-bottom: 60px;
+  }
+}
+
 
 
 
