@@ -1,3 +1,7 @@
+:root {
+  --gold: #bfa76a;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -256,6 +260,7 @@ footer {
 .lightbox .close:hover {
   color: white;
 }
+
 
 
 
