@@ -211,6 +211,52 @@ footer {
 
 
 
+/* ===== LIGHTBOX SHOWROOM ===== */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-img {
+  max-width: 85%;
+  max-height: 85%;
+  border-radius: 16px;
+  box-shadow: 0 40px 80px rgba(201,162,77,0.4);
+}
+
+.lightbox .close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: var(--gold);
+  cursor: pointer;
+}
+
+.lightbox .nav {
+  position: absolute;
+  top: 50%;
+  font-size: 60px;
+  color: var(--gold);
+  cursor: pointer;
+  user-select: none;
+  transform: translateY(-50%);
+}
+
+.lightbox .prev { left: 40px; }
+.lightbox .next { right: 40px; }
+
+.lightbox .nav:hover,
+.lightbox .close:hover {
+  color: white;
+}
+
 
 
 
