@@ -432,6 +432,18 @@ footer {
   }
 
 }
+@media (max-width: 768px) {
+
+  #workshop .video-container {
+    margin-bottom: 80px;
+  }
+
+  #workshop .grid {
+    margin-top: 40px;
+  }
+
+}
+
 
 
 
