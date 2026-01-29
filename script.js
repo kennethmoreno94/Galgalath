@@ -25,3 +25,19 @@ images.forEach(img => {
 lightbox.addEventListener("click", () => {
   lightbox.style.display = "none";
 });
+// Animación tipo lanzamiento Ferrari
+const revealItems = document.querySelectorAll('.gallery-item, .video-container');
+
+const revealOnScroll = () => {
+  revealItems.forEach(item => {
+    const top = item.getBoundingClientRect().top;
+    const trigger = window.innerHeight * 0.85;
+
+    if (top < trigger) {
+      item.classList.add('reveal');
+    }
+  });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+revealOnScroll();
