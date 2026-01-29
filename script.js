@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const links = document.querySelectorAll("nav a");
 
-  links.forEach(link => {
+  // Scroll suave menú
+  document.querySelectorAll("nav a").forEach(link => {
     link.addEventListener("click", e => {
       e.preventDefault();
       document
@@ -9,75 +9,54 @@ document.addEventListener("DOMContentLoaded", () => {
         .scrollIntoView({ behavior: "smooth" });
     });
   });
-});
-// Lightbox para imágenes
-const images = document.querySelectorAll(".card img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
 
-images.forEach(img => {
-  img.addEventListener("click", () => {
-    lightboxImg.src = img.src;
+  // ===== LIGHTBOX SHOWROOM =====
+  const images = document.querySelectorAll(".card img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.querySelector(".lightbox-img");
+  const closeBtn = document.querySelector(".close");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
+
+  let currentIndex = 0;
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => {
+      currentIndex = index;
+      openLightbox();
+    });
+  });
+
+  function openLightbox() {
     lightbox.style.display = "flex";
+    lightboxImg.src = images[currentIndex].src;
+  }
+
+  function closeLightbox() {
+    lightbox.style.display = "none";
+  }
+
+  closeBtn.addEventListener("click", closeLightbox);
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    openLightbox();
   });
-});
 
-lightbox.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
-// Animación tipo lanzamiento Ferrari
-const revealItems = document.querySelectorAll('.gallery-item, .video-container');
-
-const revealOnScroll = () => {
-  revealItems.forEach(item => {
-    const top = item.getBoundingClientRect().top;
-    const trigger = window.innerHeight * 0.85;
-
-    if (top < trigger) {
-      item.classList.add('reveal');
-    }
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    openLightbox();
   });
-};
-// ===== LIGHTBOX SHOWROOM =====
-const images = document.querySelectorAll('.gallery-item img');
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.querySelector('.lightbox-img');
-const closeBtn = document.querySelector('.close');
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
 
-let currentIndex = 0;
-
-images.forEach((img, index) => {
-  img.addEventListener('click', () => {
-    currentIndex = index;
-    showLightbox();
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") nextBtn.click();
+    if (e.key === "ArrowLeft") prevBtn.click();
   });
+
+  // Cerrar al hacer click fuera de la imagen
+  lightbox.addEventListener("click", e => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
 });
-
-function showLightbox() {
-  lightbox.style.display = 'flex';
-  lightboxImg.src = images[currentIndex].src;
-}
-
-closeBtn.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % images.length;
-  showLightbox();
-});
-
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + images.length) % images.length;
-  showLightbox();
-});
-
-// Cerrar con ESC
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') lightbox.style.display = 'none';
-});
-
-window.addEventListener('scroll', revealOnScroll);
-revealOnScroll();
