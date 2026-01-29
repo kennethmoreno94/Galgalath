@@ -421,6 +421,18 @@ footer {
   max-width: 600px;
 }
 
+@media (max-width: 768px) {
+
+  #workshop .video-container {
+    margin-bottom: 60px; /* espacio real debajo del video */
+  }
+
+  #workshop .grid {
+    margin-top: 20px; /* empuja las imágenes hacia abajo */
+  }
+
+}
+
 
 
 
