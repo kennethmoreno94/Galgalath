@@ -62,3 +62,9 @@ color: white;
 text-align: center;
 padding: 1.2rem;
 }
+header {
+  background-image: url('images/portada.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
