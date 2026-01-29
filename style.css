@@ -457,6 +457,18 @@ footer {
   }
 }
 
+/* ESPACIADO REAL ENTRE VIDEO E IMÁGENES */
+#workshop .video-wrapper {
+  margin-bottom: 80px;
+}
+
+/* Extra aire SOLO en móvil */
+@media (max-width: 768px) {
+  #workshop .video-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
 
 
 
