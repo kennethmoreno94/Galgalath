@@ -1,1 +1,46 @@
-console.log("Web de artesanías lista");
+
+
+<section id="inicio" class="hero">
+<h2>Bienvenidos</h2>
+<p>Centro de acceso a nuestras artesanías, taller y boutique.</p>
+</section>
+
+
+<section id="galeria" class="section">
+<h2>Galería</h2>
+<div class="grid">
+<div class="card">Artesanía 1</div>
+<div class="card">Artesanía 2</div>
+<div class="card">Artesanía 3</div>
+</div>
+</section>
+
+
+<section id="taller" class="section alt">
+<h2>Taller</h2>
+<p>Conoce nuestro proceso creativo y talleres artesanales.</p>
+</section>
+
+
+<section id="boutique" class="section">
+<h2>Boutique</h2>
+<p>Accede a nuestra tienda en línea y puntos de venta.</p>
+</section>
+
+
+<section id="contacto" class="section alt">
+<h2>Contacto</h2>
+<p>Email: contacto@ejemplo.com</p>
+<p>WhatsApp: +502 0000 0000</p>
+</section>
+
+
+<section id="empresa" class="section">
+<h2>Sobre la empresa</h2>
+<p>Somos una empresa dedicada a la creación de artesanías auténticas.</p>
+</section>
+
+
+<footer>
+<p>© 2026 Artesanías</p>
+</html>
