@@ -444,6 +444,19 @@ footer {
 
 }
 
+/* ===== FIX REAL ESPACIADO WORKSHOP ===== */
+
+#workshop .video-wrapper {
+  margin-bottom: 80px; /* espacio REAL debajo del video */
+}
+
+/* en móvil un poco más de aire */
+@media (max-width: 768px) {
+  #workshop .video-wrapper {
+    margin-bottom: 100px;
+  }
+}
+
 
 
 
