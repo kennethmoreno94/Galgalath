@@ -11,9 +11,18 @@ body {
 }
 
 .menu {
-  min-height: 300px;
-  background: red;
+  min-height: 300px; /* 🔑 ESTO ES CLAVE */
+  background-image:
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+    url("images/aldea.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 20px;
+  text-align: center;
+  border-bottom: 3px solid #bfa76a;
 }
+
 
 
 
@@ -112,6 +121,7 @@ footer {
   background: #000;
   border-top: 2px solid #bfa76a;
 }
+
 
 
 
