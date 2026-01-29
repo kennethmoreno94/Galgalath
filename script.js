@@ -27,14 +27,18 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  function openLightbox() {
-    lightbox.style.display = "flex";
-    lightboxImg.src = images[currentIndex].src;
-  }
+function openLightbox() {
+  lightbox.style.display = "flex";
+  lightboxImg.src = images[currentIndex].src;
+  resetZoom();
+}
+
 
   function closeLightbox() {
-    lightbox.style.display = "none";
-  }
+  lightbox.style.display = "none";
+  resetZoom();
+}
+
 
   closeBtn.addEventListener("click", closeLightbox);
 
