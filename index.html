@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galgalath</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galgalath Artesanías</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header">
-    <nav class="nav">
-      <h1 class="logo">GALGALATH</h1>
-      <ul class="menu">
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#taller">Taller</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="menu">
+  <h1>Galgalath</h1>
+  <nav>
+    <a href="#galeria">Galería</a>
+    <a href="#taller">Taller</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
 
-  <main>
-    <!-- GALERÍA -->
-    <section id="galeria" class="section">
-      <h2>Galería</h2>
-      <p class="section-desc">Piezas únicas de lujo artesanal</p>
+<section id="galeria" class="section">
+  <h2>Galería</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="images/galeria1.jpg" alt="Artesanía Galgalath">
+    </div>
+    <div class="card">
+      <img src="images/galeria2.jpg" alt="Artesanía Galgalath">
+    </div>
+    <div class="card">
+      <img src="images/galeria3.jpg" alt="Artesanía Galgalath">
+    </div>
+  </div>
+</section>
 
-      <!-- Aquí puedes agregar imágenes directamente -->
-      <div class="gallery">
-        <!-- EJEMPLO -->
-        <!-- <img src="images/foto1.jpg" alt="Obra Galgalath"> -->
-      </div>
-    </section>
+<section id="taller" class="section alt">
+  <h2>Taller</h2>
+  <p>Conoce nuestro proceso creativo y talleres artesanales.</p>
 
-    <!-- TALLER -->
-    <section id="taller" class="section dark">
-      <h2>Taller</h2>
-      <p class="section-desc">Proceso, detalle y perfección</p>
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/VIDEO_ID"
+      title="Taller Galgalath"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
 
-      <!-- Video de YouTube incrustado -->
-      <div class="video-container">
-        <iframe 
-          src="https://www.youtube.com/embed/VIDEO_ID" 
-          title="Video del Taller"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
-      </div>
-    </section>
-  </main>
+<section id="contacto" class="section alt">
+  <h2>Contacto</h2>
 
-  <footer class="footer">
-    <p>© 2026 Galgalath · Artesanía de Alto Lujo</p>
-  </footer>
+  <div class="social">
+    <a href="https://facebook.com/galgalath" target="_blank">Facebook</a>
+    <a href="https://instagram.com/galgalath" target="_blank">Instagram</a>
+    <a href="https://pinterest.com/galgalath" target="_blank">Pinterest</a>
+    <a href="https://tumblr.com/galgalath" target="_blank">Tumblr</a>
+    <a href="https://youtube.com/@galgalath" target="_blank">YouTube</a>
+    <a href="https://tiktok.com/@galgalath" target="_blank">TikTok</a>
+  </div>
 
-  <script src="script.js"></script>
+  <div class="support">
+    <a href="https://patreon.com/galgalath" target="_blank">Patreon</a>
+    <a href="https://paypal.me/galgalath" target="_blank">PayPal</a>
+    <a href="https://buymeacoffee.com/galgalath" target="_blank">BuyMeACoffee</a>
+    <a href="https://ko-fi.com/galgalath" target="_blank">Ko-fi</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Galgalath Artesanías</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
