@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Galgalath Artesanías</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,21 +25,11 @@
 <section id="galeria" class="section">
   <h2>Galería</h2>
   <div class="grid">
-    <div class="card">
-      <img src="images/aldea1.png" alt="Artesanía Galgalath">
-    </div>
-    <div class="card">
-      <img src="images/aldea2.png" alt="Artesanía Galgalath">
-    </div>
-    <div class="card">
-      <img src="images/aldea3.png" alt="Artesanía Galgalath">
-    </div>
-    <div class="card">
-      <img src="images/aldea5.png" alt="Artesanía Galgalath">
-    </div>
-    <div class="card">
-      <img src="images/aldea4.png" alt="Artesanía Galgalath">
-    </div>
+    <div class="card"><img src="images/aldea1.png" alt="Artesanía Galgalath"></div>
+    <div class="card"><img src="images/aldea2.png" alt="Artesanía Galgalath"></div>
+    <div class="card"><img src="images/aldea3.png" alt="Artesanía Galgalath"></div>
+    <div class="card"><img src="images/aldea5.png" alt="Artesanía Galgalath"></div>
+    <div class="card"><img src="images/aldea4.png" alt="Artesanía Galgalath"></div>
   </div>
 </section>
 
@@ -44,34 +38,25 @@
   <p>Conoce nuestro proceso creativo y talleres artesanales.</p>
 
   <div class="video-container">
-    <iframe 
-      src="https://www.youtube.com/embed/VIDEO_ID"
-      title="Taller Galgalath"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Taller Galgalath" allowfullscreen></iframe>
   </div>
 
   <div class="grid">
-    <div class="card">
-      <img src="images/casa1.png" alt="Proceso artesanal Galgalath">
-    </div>
-    <div class="card">
-      <img src="images/aldea.png" alt="Detalle de taller Galgalath">
-    </div>
+    <div class="card"><img src="images/casa1.png" alt="Proceso artesanal Galgalath"></div>
+    <div class="card"><img src="images/aldea.png" alt="Detalle de taller Galgalath"></div>
   </div>
 </section>
 
-<!-- ===== NUEVA SECCIÓN APOYO ===== -->
+<!-- ===== APOYO ===== -->
 <section id="apoyo" class="section">
   <h2>Apoyo</h2>
-  <p>Si deseas apoyar el proyecto Galgalath, puedes hacerlo a través de las siguientes plataformas:</p>
+  <p>Si deseas apoyar el proyecto Galgalath, puedes hacerlo aquí:</p>
 
   <div class="support">
-    <a href="https://patreon.com/galgalath" target="_blank">Patreon</a>
-    <a href="https://paypal.me/galgalath" target="_blank">PayPal</a>
-    <a href="https://buymeacoffee.com/galgalath" target="_blank">BuyMeACoffee</a>
-    <a href="https://ko-fi.com/galgalath" target="_blank">Ko-fi</a>
+    <a href="https://patreon.com/galgalath" target="_blank"><i class="fab fa-patreon"></i> Patreon</a>
+    <a href="https://paypal.me/galgalath" target="_blank"><i class="fab fa-paypal"></i> PayPal</a>
+    <a href="https://buymeacoffee.com/galgalath" target="_blank"><i class="fas fa-mug-hot"></i> BuyMeACoffee</a>
+    <a href="https://ko-fi.com/galgalath" target="_blank"><i class="fas fa-coffee"></i> Ko-fi</a>
   </div>
 </section>
 
@@ -88,8 +73,8 @@
   </div>
 
   <div class="contact-info">
-    <p>📧 Correo: <a href="mailto:contacto@galgalath.com">contacto@galgalath.com</a></p>
-    <p>📱 WhatsApp: <a href="https://wa.me/50200000000" target="_blank">+502 0000 0000</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:contacto@galgalath.com">contacto@galgalath.com</a></p>
+    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/50200000000" target="_blank">+502 0000 0000</a></p>
   </div>
 </section>
 
@@ -99,7 +84,7 @@
 
 <script src="script.js"></script>
 
-<!-- LIGHTBOX SHOWROOM -->
+<!-- LIGHTBOX -->
 <div id="lightbox" class="lightbox">
   <span class="close">&times;</span>
   <img class="lightbox-img" src="">
@@ -107,5 +92,16 @@
   <span class="nav next">&#10095;</span>
 </div>
 
+<!-- BOTONES FLOTANTES -->
+<div class="floating-buttons">
+  <a href="https://wa.me/50200000000" target="_blank" class="float-btn whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="mailto:contacto@galgalath.com" class="float-btn email">
+    <i class="fas fa-envelope"></i>
+  </a>
+</div>
+
 </body>
 </html>
+
